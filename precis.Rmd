@@ -1,0 +1,25 @@
+---
+title: "precis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(dplyr)
+library(knitr)
+library(readxl)
+library(readr)
+library(janitor)
+```
+
+
+## Final Project: Analyzing Global Literacy and Access to Technology
+#### For my final project, I plan on using data from the World Bank. The two datasets cover two topics: literacy rates amongst men and women between 2007-2016 and access to internet around the world between 1990 - 2011. I'm still searching for more data so I can have two that cover the same timeframe. I'd like to use this data to uncover possible trends in the literacy rate in countries and possibly attribute that to the changes in access to the internet.
+```{r}
+lit_data <- read_excel("literacy_data.xls")
+internet_data <- read_excel("Internet_usage_data.xlsx")
+
+
+```
+
